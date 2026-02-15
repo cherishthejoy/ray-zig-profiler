@@ -1,4 +1,4 @@
-# Raylib profiler
+# Raylib + Zig profiler
 
 Mainly for personal use. If you find any need for it, feel free to use the code however you want.
 
