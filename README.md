@@ -2,7 +2,7 @@
 
 Mainly for personal use. If you find any need for it, feel free to use the code however you want.
 
-This tool is dependent of raylib-zig since it uses a graphics layer for rendering, So, make sure to install [that](https://github.com/raylib-zig/raylib-zig) first and do the configuration.
+This tool is dependent of raylib-zig since it uses a graphics layer for rendering. So, make sure to install [that](https://github.com/raylib-zig/raylib-zig) first and do the configuration.
 
 What it can do:
 * CPU profiling
@@ -16,7 +16,7 @@ Download and install profiler as a dependency by running the command in the root
 zig fetch --save git+https://github.com/cherishthejoy/ray-zig-profiler
 ```
 
-In the build.zig
+In `build.zig`
 ```zig
 const profile_dep = b.dependency("profile", .{
     .target = target,
