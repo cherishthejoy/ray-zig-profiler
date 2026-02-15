@@ -27,6 +27,7 @@ Final: 0 bytes | Total allocated: 63104 bytes
 [1] 240 bytes - freed
 ---------------------------
 ```
+## Installing & Usage
 
 Download and install profiler as a dependency by running the command in the root of your project directory:
 
