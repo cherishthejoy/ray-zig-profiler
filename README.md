@@ -10,6 +10,24 @@ What it can do:
 * Memory leak report
 * Performance graph
 
+![Example](images/test.png)
+
+```bash
+=== Allocation Timeline ===
+[0.015ms] + 62864 bytes (50 nodes)
+[12330.463ms] -62864 bytes freed
+[0.050ms] + 240 bytes
+[12330.461ms] -240 bytes freed
+---------------------------------------
+Peak: 63104 bytes at 0.064ms
+Final: 0 bytes | Total allocated: 63104 bytes
+
+=== Leak Report ===
+[0] 62864 bytes - freed
+[1] 240 bytes - freed
+---------------------------
+```
+
 Download and install profiler as a dependency by running the command in the root of your project directory:
 
 ```bash
@@ -100,23 +118,4 @@ pub fn main() anyerror!void {
     }
 }
 ```
-
-![Example](images/test.png)
-
-```bash
-=== Allocation Timeline ===
-[0.015ms] + 62864 bytes (50 nodes)
-[12330.463ms] -62864 bytes freed
-[0.050ms] + 240 bytes
-[12330.461ms] -240 bytes freed
----------------------------------------
-Peak: 63104 bytes at 0.064ms
-Final: 0 bytes | Total allocated: 63104 bytes
-
-=== Leak Report ===
-[0] 62864 bytes - freed
-[1] 240 bytes - freed
----------------------------
-```
-
 Note to self: Do tests, optimize.
