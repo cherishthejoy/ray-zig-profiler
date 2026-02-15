@@ -119,4 +119,4 @@ Final: 0 bytes | Total allocated: 63104 bytes
 ---------------------------
 ```
 
-Currently, I have no intention to support it on the web.
+Note to self: Do tests, optimize.
